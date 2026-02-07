@@ -41,7 +41,7 @@ class Update:
 
             try:
                 logger.debug(f"Removing old installation directory: {self.install_dir}/RbxPI")
-                shutil.rmtree(self.install_dir)
+                shutil.rmtree(f"{self.install_dir}/RbxPI")
 
                 logger.info("Extracting update archive...")
                 extracted_folder = Shared.extract_file(archive_path, self.install_dir)
