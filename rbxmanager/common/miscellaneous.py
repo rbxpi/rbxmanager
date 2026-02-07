@@ -1,7 +1,7 @@
 #!/user/bin/env python3
 
 import os
-import shutil
+import subprocess
 
 
 def clear_screen() -> int:
@@ -15,4 +15,4 @@ def clear_screen() -> int:
     :rtype: int
     """
 
-    return os.system('cls' if os.name == 'nt' else 'clear')
+    return subprocess.call(f"{'cls' if os.name == 'nt' else 'clear'}", shell=False)

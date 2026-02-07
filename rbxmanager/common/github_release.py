@@ -63,5 +63,5 @@ def get_result_version(current_version, latest_version):
         logger.info(f"Current version ({current_version}) is up to date.")
         return f"Current version ({current_version}) is up to date."
     else:
-        return ("A new version of Robox Install Manager has been found.\n"
+        return ("A new version of RbxPI Install Manager has been found.\n"
                 "https://github.com/rbxpi/rbxmanager/releases/latest")

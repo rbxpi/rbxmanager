@@ -9,6 +9,6 @@ class Shell:
         try:
             prompt = input("> ") if not message else input(f"{message} > ")
         except KeyboardInterrupt:
-            exit("\nClosing Roblox Install Manager.")
+            exit("\nClosing RbxPI Install Manager.")
 
         return prompt

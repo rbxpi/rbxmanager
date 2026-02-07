@@ -24,7 +24,7 @@ class RbxManager:
         ftime = datetime.datetime.now()
         month = calendar.month_abbr[ftime.month]
 
-        print(f"Roblox Install Manager {self.context.version} "
+        print(f"RbxPI Install Manager {self.context.version} "
               f"({month} {ftime.day} {ftime.year}, {ftime.hour}:{ftime.minute}:{ftime.second}) "
               f"{"[DEBUG] " if self.context.args.debug else ""}on {self.context.os}\n")
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-""" Roblox Install Manager
+""" RbxPI Install Manager
 
-Roblox Install Manager makes it easy to install RbxPI in your Roblox projects.
+RbxPI Install Manager makes it easy to install RbxPI in your Roblox projects.
 The project is developed primarily in Python.
 """
 
-__version__ = '1.0.1'
+__version__ = '1.0.2'
