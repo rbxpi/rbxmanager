@@ -105,13 +105,16 @@ class Install:
         :rtype: NoneType
         """
 
-        url = self.get_rbxm_download_url()
-        logger.info(f"Downloading .rbxm asset for {self.release.get('tag')}...")
+        print(f"\nDo you want to install RbxPI {self.release.get('tag')}?")
+        if Shell.input("[Y/n]").lower() in ["y", ""]:
 
-        full_path = self.download(url)
+            url = self.get_rbxm_download_url()
+            logger.info(f"Downloading .rbxm asset for {self.release.get('tag')}...")
 
-        logger.info(f"Installation successful. Asset saved to {full_path}")
-        print(f"Installation complete, the .rbxm file is located in: {full_path}")
+            full_path = self.download(url)
+
+            logger.info(f"Installation successful. Asset saved to {full_path}")
+            print(f"Installation complete, the .rbxm file is located in: {full_path}")
 
     def install_rojo(self) -> None:
         """ Execute the installation workflow for a Rojo project
@@ -126,7 +129,7 @@ class Install:
 
         self.install_dir = self.ask_install_directory()
 
-        print(f"\nDo you want to install RbxPI {self.release.get("tag")}?")
+        print(f"\nDo you want to install RbxPI {self.release.get('tag')}?")
         if Shell.input("[Y/n]").lower() in ["y", ""]:
             tag = self.release["tag"]
             url = f"https://github.com/rbxpi/rbxpi-core/archive/refs/tags/{tag}.zip"
