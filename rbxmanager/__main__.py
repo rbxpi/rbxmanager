@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-""" Roblox Install Manager
+""" RbxPI Install Manager
 
-Roblox Install Manager makes it easy to install RbxPI in your Roblox projects.
+RbxPI Install Manager makes it easy to install RbxPI in your Roblox projects.
 The project is developed primarily in Python.
 """
 
@@ -67,7 +67,7 @@ def argparse_setup() -> tuple[argparse.ArgumentParser, argparse.Namespace]:
     :rtype: tuple[argparse.ArgumentParser, argparse.Namespace]
     """
 
-    parser = argparse.ArgumentParser(description=f"Roblox Install Manager - v{__version__}")
+    parser = argparse.ArgumentParser(description=f"RbxPI Install Manager - v{__version__}")
     parser.add_argument('-v', '--verbose', action='store_true', help="show detailed output and progress information")
     parser.add_argument('-f', '--force', nargs='+', choices=['os', 'python', 'deps', 'all'], help="skip specific validation steps")
     parser.add_argument('-u', '--update', action='store_true', help="check if an update is available")

@@ -222,7 +222,7 @@ class Database:
         if days_since_modification >= 3:
             logger.info(f"Database is outdated ({days_since_modification} days). Warning shown to user.")
 
-            print(f"* Roblox Install Manager hasn't updated its database in a long time, please refresh it.\n"
+            print(f"* RbxPI Install Manager hasn't updated its database in a long time, please refresh it.\n"
                   f"* To maintain the reliability of rbxmanager, its database will be automatically updated {7 - days_since_modification} days after use.\n")
 
         return True
